@@ -1,0 +1,110 @@
+<html><head>
+    <link rel="stylesheet" href="survey_form.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Market Research Survey</h1>
+        <p id="description" class="description text-center">
+          Please take a few minutes to tell us about you and your preferences
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label class="question" id="name-label" for="name">Name</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="">
+        </div>
+        <div class="form-group">
+          <label class="question" id="email-label" for="email">Email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required="">
+        </div>
+        <div class="form-group">
+          <label class="question" id="gender" for="gender">What is your gender?</label>
+<label>
+            <input name="gender" value="Female" type="radio" class="input-radio" checked="">Female</label>
+          <label>
+            <input name="gender" value="Male" type="radio" class="input-radio">Male</label>
+         <label><input name="gender" value="Non-binary" type="radio" class="input-radio">Non-binary</label>
+        <label><input name="gender" value="Prefer not to answer" type="radio" class="input-radio">Prefer not to answer</label>
+        </div>
+        <div class="form-group">
+          <label class="question" id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+          <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+        </div>
+    <div class="form-group">
+          <label class="question" id="status" for="status">What is your marital status?</label>
+<label>
+            <input name="status" value="Single" type="radio" class="input-radio" checked="">Single</label>
+          <label>
+            <input name="status" value="Married" type="radio" class="input-radio">Married</label>
+          <label><input name="status" value="maybe" type="radio" class="input-radio">Divorced</label>
+        <label><input name="status" value="maybe" type="radio" class="input-radio">Widowed</label>
+  <label><input name="status" value="maybe" type="radio" class="input-radio">Prefer not to answer</label>
+        </div>
+        <div class="form-group">
+          <p class="question">What is your annual income range?</p>
+          <select id="dropdown" name="role" class="form-control" required="">
+            <option disabled="" selected="" value="">Select current range</option>
+            <option value="$9999">$9999 or less</option>
+            <option value="$24999">$10000-$24999</option>
+            <option value="$49999">$25000-$49999</option>
+            <option value="$74999">$50000-$74999</option>
+            <option value="$99999">$75000-$99999</option>
+            <option value="$100000 or more">$100000 or more</option>
+            <option value="Prefer Not to Answer">Prefer Not to Answer</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p class="question">When did you last buy a sportswear?</p>
+          <label>
+            <input name="last-buy" value="Less than a 1 month ago" type="radio" class="input-radio" checked="">Less than a 1 month ago</label>
+          <label>
+            <input name="last-buy" value="Between 1 and 6 months ago" type="radio" class="input-radio">Between 1 and 6 months ago</label>
+          <label><input name="last-buy" value="Between 6 months and 1 year ago" type="radio" class="input-radio">Between 6 months and 1 year ago</label>
+          <label><input name="last-buy" value="More than 1 year ago" type="radio" class="input-radio" checked="">More than 1 year ago</label>
+          <label>
+            <input name="last-buy" value="I do not remember" type="radio" class="input-radio">I do not remember</label>
+        </div>
+        <div class="form-group">
+          <p class="question">
+            What is your preferred design for sporstwear?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label><input name="prefer" value="Minimalist (with 1 or 2 colors)" type="checkbox" class="input-checkbox">Minimalist (with 1 or 2 colors)</label>
+          <label>
+            <input name="prefer" value="Bold colors and design (e.g. neon colors)" type="checkbox" class="input-checkbox">Bold colors and design (e.g. neon colors)</label>
+          <label><input name="prefer" value="With slogans and pictures on" type="checkbox" class="input-checkbox">With slogans and pictures on</label>
+          <label><input name="prefer" value="Other" type="checkbox" class="input-checkbox">Other</label>
+        </div>
+
+ <div class="form-group">
+          <p class="question">
+            Which of the followings would influence your decision to buy a certain brand?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label><input name="influence" value="Price" type="checkbox" class="input-checkbox">Price</label>
+          <label>
+            <input name="influence" value="Quality" type="checkbox" class="input-checkbox">Quality</label>
+          <label><input name="influence" value="Value" type="checkbox" class="input-checkbox">Value</label>
+          <label><input name="influence" value="Brand" type="checkbox" class="input-checkbox">Brand</label>
+          <label><input name="influence" value="Other" type="checkbox" class="input-checkbox">Other</label>
+        </div>
+
+        <div class="form-group">
+          <p class="question">Any comments or suggestions?</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  
+
+</body></html>
